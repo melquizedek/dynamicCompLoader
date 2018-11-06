@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatMenuModule, MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule} from '@angular/material';
+import { MatMenuModule, MatToolbarModule, MatIconModule, MatCardModule, MatButtonModule } from '@angular/material';
 import { ProfilesRoutingModule } from './profiles-routing.module';
 import { MainProfileComponent } from './main-profile/main-profile.component';
 import { ProfileComponent } from './profile';
-import { ProfileHkComponent } from './profile-hk/profile-hk.component';
-import { ProfileThaiComponent } from './profile-thai/profile-thai.component';
 import { TempLoaderDirective } from '../../shared/directives/temp-loader/temp-loader.directive';
+import { ProfileHkComponent } from '../profile-hk/profile-hk/profile-hk.component';
 
 @NgModule({
   imports: [
@@ -27,17 +26,13 @@ import { TempLoaderDirective } from '../../shared/directives/temp-loader/temp-lo
   ],
   declarations: [
     ProfileComponent, 
-    MainProfileComponent, 
-    ProfileHkComponent, 
-    ProfileThaiComponent, 
+    MainProfileComponent,
     TempLoaderDirective,
-    ProfileHkComponent,
-    ProfileThaiComponent
+    ProfileHkComponent
   ],
   entryComponents: [
     MainProfileComponent,
-    ProfileHkComponent,
-    ProfileThaiComponent
+    ProfileHkComponent
   ]
 })
 export class ProfilesModule { }

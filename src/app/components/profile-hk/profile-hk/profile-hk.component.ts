@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileHkComponent implements OnInit {
 
   data: any = null;
-  
+
   constructor() { }
 
   ngOnInit() {
-	  console.log('ProfileHkComponent - data => ', this.data);
+		console.log('ProfileHkComponent - data => ', this.data);
   }
 
 }

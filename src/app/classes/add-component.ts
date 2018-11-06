@@ -1,5 +1,5 @@
 import { Type } from '@angular/core';
 
-export class CompItem {
+export class AddComponent {
   constructor(public component: Type<any>, public data: any) {}
 }

@@ -12,6 +12,7 @@ export class MainProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      console.log('MainProfile:data -> ', this.data);
   }
 
 }
